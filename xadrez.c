@@ -7,7 +7,7 @@ int main() {
     int casasRainha = 8;
 
     // -------------------- TORRE (usando for) --------------------
-    printf("Movimento da Torre:\n");
+    printf("Movimento da Torre:\n"); 
     for (int i = 0; i < casasTorre; i++) {
         printf("Direita\n");
     }
@@ -27,6 +27,21 @@ int main() {
         printf("Esquerda\n");
         k++;
     } while (k < casasRainha);
+
+    // -------------------- CAVALO (usando for + while aninhado) --------------------
+    printf("\nMovimento do Cavalo:\n");
+    
+    // 2 casas para baixo
+    for (int m = 0; m < 2; m++) {
+        printf("Baixo\n");
+    }
+
+    // 1 casa para a esquerda (com loop while dentro do for)
+    int n = 0;
+    while (n < 1) {
+        printf("Esquerda\n");
+        n++;
+    }
 
     return 0;
 }
